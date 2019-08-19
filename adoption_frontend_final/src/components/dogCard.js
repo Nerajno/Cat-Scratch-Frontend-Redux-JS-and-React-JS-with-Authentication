@@ -1,49 +1,36 @@
 import React from 'react'
 import ReactDom from 'react-dom';
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 
-class HealerCard extends React.Component {
-
-  componentDidUpdate() {
-    console.log(" Healer Card component did update ran!")
-    
-  }
-
-  componentDidMount() {
-    console.log("Healer Card component did mount ran!")
-
-  }
-
-  componentWillMount() {
-
-    console.log("Healer Card component will  unmount ran!")
-
-  }
-
-  
+class DogCard extends React.Component {
 
   render() {
+    console.log(this);
+    
     return (
-      <div className="ui column">
-        <div className="ui segment image ">
-          <Link to={`healer/${this.props.healer.id}`} >
-          <img alt="Image of medicine healer"
-              src={this.props.healer.length > 0 ? this.props.healer[0].image : this.props.healer.image} />
-          </Link>
-        </div>
-        <div className="content">
-          <a className="header">{this.props.healer.name}</a>
-          <div className="description">
-            {this.props.healer.description}
-          </div>
-        </div>
-      </div>
+
+    <Card>
+      <Image src={this.props.Dog.img} wrapped ui={false} />
+      <Card.Content>
+        <Card.Header>{this.props.Dog.name}</Card.Header>
+        <Card.Meta>
+          <span className='age'>{this.props.Dog.age} years old</span>
+        </Card.Meta>
+        <p>
+          {this.props.Dog.breed}
+        </p>
+      </Card.Content>
+      <Card.Content extra>
+        <a>
+          {this.props.Dog.location}
+        </a>
+      </Card.Content>
+    </Card>
     )
-  }
-
-
-
+    } 
+ 
+  
 }
-
-
-export default HealerCard;
+  
+  export default DogCard
