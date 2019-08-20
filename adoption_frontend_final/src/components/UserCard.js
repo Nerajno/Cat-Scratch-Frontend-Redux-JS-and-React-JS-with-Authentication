@@ -1,26 +1,23 @@
 import React from 'react'
-import ReactDom from 'react-dom';
+//import ReactDom from 'react-dom';
 import { Card, Icon ,Image } from 'semantic-ui-react'
-import SearchBar from './SearchBar'
+//import SearchBar from './SearchBar'
 
 
-class DogCard extends React.Component {
+class UserCard extends React.Component {
 
   render() {
     // console.log(this);
-    
     return (
-    
-
     <Card>
-      <Image src={this.props.Dog.img} wrapped ui={false} />
+      <Image src={this.props.User.img} wrapped ui={false} />
       <Card.Content>
-        <Card.Header>{this.props.Dog.name}</Card.Header>
+        <Card.Header>{this.props.User.name}</Card.Header>
         <Card.Meta>
-          <span className='age'>{this.props.Dog.age} years old</span>
+          <span className='age'>{this.props.User.age} years old</span>
         </Card.Meta>
         <p>
-        {this.props.Dog.breed}
+        {this.props.User.breed}
         </p>
       </Card.Content>
       <Card.Content extra>
@@ -31,7 +28,7 @@ class DogCard extends React.Component {
         <br/>
         <a>
         <Icon name='home' />
-          {this.props.Dog.adoption_location}
+          {/* {this.props.User.adoption_location} */}
         </a>
       </Card.Content>
     </Card>
@@ -41,4 +38,4 @@ class DogCard extends React.Component {
   
 }
   
-  export default DogCard
+  export default UserCard

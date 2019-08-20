@@ -1,7 +1,7 @@
 import React from "react";
-import DogCard from './DogCard'
+import UserCard from './UserCard'
 
-class DogContainer extends React.Component{
+class UserContainer extends React.Component{
 
     // componentDidUpdate(){
     //     console.log("Healer Container component did update ran!")
@@ -14,12 +14,12 @@ class DogContainer extends React.Component{
         // console.log(this);
         
     return (
-         <div className="ui three column grid container">{this.props.dogs.map
-        (dog => <div className="five wide column"><DogCard Dog={dog}/> </div>)}
+         <div className="ui three column grid container">{this.props.users.map
+        (user => <div className="five wide column"><UserCard User={user}/> </div>)}
         </div>
         )
       }
 
 }
 
-export default DogContainer;
+export default UserContainer;
