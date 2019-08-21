@@ -1,37 +1,66 @@
-import React from 'react'
-// import { Link } from 'react-router-dom';
+import React from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
+export default class SearchBar extends React.Component {
+  constructor(props) {
+    super(props);
 
-class SearchBar extends React.Component{
-   componentDidUpdate(){
-       console.log("search bar updated? ")
-   }
-   render(){
-       return(
-
-        <div>"Trest"</div>
-        //    <div className="ui four item menu">
-        //        <div className="item" >
-        //            <h3>
-        //               <Link to='/healers'>Natural Healing Directory</Link>
-        //            </h3>
-        //        </div>
-        //        <div className="item" >
-        //            <h3>
-        //                <Link to='/newHealer'>Add Healer</Link>
-        //            </h3>
-        //        </div>
-        //        <div className="item" >
-        //            <h3>
-        //                <Link to='/'>Home</Link>
-        //            </h3>
-        //        </div>
-        //        <div className="ui large icon input">
-        //            <i className="search icon"></i>
-        //            <input onChange = {this.props.handleSearch }name="search" type="text" placeholder="Search..."/>
-        //        </div>
-        //    </div>
-       )
-   }
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/components/">Components</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Options
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    Option 1
+                  </DropdownItem>
+                  <DropdownItem>
+                    Option 2
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Reset
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
-export default SearchBar;

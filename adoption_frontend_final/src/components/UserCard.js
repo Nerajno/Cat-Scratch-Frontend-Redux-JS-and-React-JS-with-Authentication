@@ -6,24 +6,25 @@ import { Card, Icon ,Image } from 'semantic-ui-react'
 
 class UserCard extends React.Component {
 
+  
   render() {
-    // console.log(this);
+    console.log(this.props.user);
     return (
     <Card>
-      <Image src={this.props.User.img} wrapped ui={false} />
+      <Image src={this.props.user.img} wrapped ui={false} />
       <Card.Content>
-        <Card.Header>{this.props.User.name}</Card.Header>
+        <Card.Header>{this.props.user.name}</Card.Header>
         <Card.Meta>
-          <span className='age'>{this.props.User.age} years old</span>
+          <span className='age'>{this.props.user.age} years old</span>
         </Card.Meta>
         <p>
-        {this.props.User.breed}
+        
         </p>
       </Card.Content>
       <Card.Content extra>
         <a>
         <Icon name='home' />
-          {this.props.Dog.dog_location}
+       
         </a>
         <br/>
         <a>
