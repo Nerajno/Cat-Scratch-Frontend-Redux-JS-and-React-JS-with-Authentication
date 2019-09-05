@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Calender from 'react-calendar';
-import { createNewT } from ='../actions/task_actions';
+
 
 class ProfileForm extends Component {
   state ={
@@ -17,8 +17,8 @@ class ProfileForm extends Component {
       name: form.name.value,
       location: form.location.value,
       spirit_animal: this.state.spirit_animal,
-      complete:false
-      user_id: this.props.user.id
+      complete:false,
+      user_id:this.props.user_id
   }
     this.props.addProfile(newProfile)
     this.setState({ redirect: <Redirect to='/dashboard'/>})
@@ -49,12 +49,6 @@ class ProfileForm extends Component {
   }
 }
 
-const mapStateToProps = state => ({if user: state.user})
 
-const mapDispatchToProps = dispatch => {
-  return{
-    addProfile:(profile) => dispatch(createNewT(profile))
-  }
-}
 
-export default connect(mapStateToProps, mapDispatchToProps) (ProfileForm)
+export default connect (ProfileForm)

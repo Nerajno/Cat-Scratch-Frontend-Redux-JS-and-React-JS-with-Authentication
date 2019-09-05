@@ -41,4 +41,39 @@ body {
  main {
    flex: 1 0 auto;
  }
-   
+ body {
+    font-family: 'Noto Serif', serif;
+    font-size: 14px;
+    background-image: url('https://wallpapercave.com/wp/wp2483019.jpg');
+    background-repeat: repeat;
+
+}
+div {
+  margin: auto;
+  width: 60%;
+
+  padding: 0px;
+  font-size: 40px;
+  color: orange;
+
+
+}
+
+
+
+
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 1200px;
+	list-style: none;
+	padding-top: 10px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+    text-align: left;
+	}

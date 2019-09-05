@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { handleLogin } from './actions/user_actions';
+import { handleLogin } from '../actions/user_actions';
 import { withRouter } from 'react-router-dom';
 
 class Login extends Component {
@@ -13,6 +13,7 @@ class Login extends Component {
   render(){
   return(
     <div>
+        <h2> Please Login!</h2>
       <form className= "ui-form" onSubmit={this.handleSubmit}>
         <div className="row">
           <div className="col s12 m4">
@@ -32,7 +33,7 @@ class Login extends Component {
   )
   }
 }
-const mapStateToProps = dispatch =>{
+const mapDispatchToProps = dispatch =>{
   return { handleLogin: (user) => {dispatch(handleLogin(user)) }}
 }
-export default withRouter(connect(mapStateToProps, mapDispatchToProps) (Login))
+export default withRouter(connect(null, mapDispatchToProps)(Login))

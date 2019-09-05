@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {handleSignUp} from ='../actions/user_actions';
+import {handleSignUp} from '../actions/user_actions';
 
 class SignUp extends Component{
 
@@ -12,9 +12,9 @@ class SignUp extends Component{
   render(){
     return(
       <div className="row" id="signup">
-      <h1> Welcome to Cat Scratch Fever</h1>
+      <h6> Welcome to Cat Scratch Fever</h6>
       <br></br>
-      <h1> Please fill out the User Profile Form Below</h1>
+      <h6> Please fill out the User Profile Form Below</h6>
         <form className=" col s8" onSubmit={this.handleSubmit}>
           <div className="row">
             <div className="input-field col s4">
