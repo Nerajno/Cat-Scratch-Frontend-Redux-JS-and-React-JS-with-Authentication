@@ -25,6 +25,7 @@ class UserCard extends React.Component {
           <div className="location"><p>Location</p>
           {this.props.user.location}
           </div>
+          
           </div>
           </div>
     )

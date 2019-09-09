@@ -37,6 +37,8 @@ export default class UserPage extends React.Component {
               <li><Link to="/my_profiles"> My Profile</Link></li>
             </ul>
         </div>
+
+        
       )
     }
   }

@@ -13,7 +13,7 @@ class SignUp extends Component{
   render(){
     return(
       <div className="row" id="signup">
-      <h3> Welcome to Cat Scratch Fever</h3>
+      <h3> Welcome to Cat Scratch!</h3>
 
       <h6> Please fill out the User Profile Form Below</h6>
         <form className=" col s8" onSubmit={this.handleSubmit}>
@@ -46,8 +46,7 @@ class SignUp extends Component{
       </div>
       <div className= "row">
         <div className="input-field col s4">
-
-        <input id="photo" type="text" className="valid"/>
+          <input id="photo" type="text" className="valid"/>
            <label htmlFor="photo">Insert your photo</label>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
+
 function CatHome() {
   return (
     <Router>
@@ -40,6 +41,9 @@ function CatHome() {
             </li>
             <li>
             <Link to="/catimagecontainer">Random Cat Images!</Link>
+            </li>
+            <li>
+            <Link to="/adduserform">Add a New User!</Link>
             </li>
 
 

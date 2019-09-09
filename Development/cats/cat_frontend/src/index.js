@@ -27,6 +27,7 @@ import EmailVerification from './components/EmailVerification';
 import CatPage from './components/CatPage'
 import CreateProfile from './components/CreateProfile';
 import ProfileForm from './views/ProfileForm';
+import AddUserForm from './components/AddUserForm';
 
 
 import CatContainer from './containers/CatContainer';
@@ -59,6 +60,8 @@ ReactDOM.render(
               <Route path = "/emailverification"  component={EmailVerification}/>
               <Route path = "/create_profile"  component={CreateProfile}/>
               <Route path = "/profile_form"  component={ProfileForm}/>
+              <Route path = '/adduserform' component= {AddUserForm}/>
+
 
 
               <Route path = "/catcontainer" component={CatContainer}/>
