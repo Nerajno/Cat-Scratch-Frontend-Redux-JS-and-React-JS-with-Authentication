@@ -39,9 +39,7 @@ function CatHome() {
             <li>
             <Link to="/emailverification">Email Your Results!</Link>
             </li>
-            <li>
-            <Link to="/catimagecontainer">Random Cat Images!</Link>
-            </li>
+        
             <li>
             <Link to="/adduserform">Add a New User!</Link>
             </li>

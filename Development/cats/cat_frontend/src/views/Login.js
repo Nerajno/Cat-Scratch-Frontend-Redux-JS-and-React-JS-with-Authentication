@@ -14,10 +14,10 @@ class Login extends Component {
   render(){
   return(
     <div>
-        <h2> Please Login!</h2>
+        <h1> Please Login!</h1>
       <form className= "ui-form" onSubmit={this.handleSubmit}>
         <div className="row">
-          <div className="col s12 m4">
+          <div className="col s20 m4">
             <div className="field">
               <label>Username</label>
               <input required type="text" name="username" placeholder="Username"/>
@@ -32,7 +32,7 @@ class Login extends Component {
       </form>
       <ul>
         <li><Link to="/">Home</Link></li>
-      
+
       </ul>
 
     </div>

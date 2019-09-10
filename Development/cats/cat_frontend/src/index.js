@@ -36,9 +36,7 @@ import UserContainer from './containers/UserContainer';
 import UserPage from './components/UserPage';
 import CartContainer from './containers/CartContainer';
 import CartPage from './components/CartPage';
-import CatImagePage from './components/CatImagePage';
-import CatImageCard from './components/CatImageCard';
-import CatImageContainer from './containers/CatImageContainer'
+
 
 
 
@@ -71,8 +69,7 @@ ReactDOM.render(
               <Route path = "/user/:id" component={UserPage}/>
               <Route path = "/cartcontainer" component={CartContainer}/>
               <Route path = "/cart/:id" component={CartPage}/>
-              <Route path = "/catimagecontainer" component={CatImageContainer}/>
-              <Route path = "/cat/image/:id" component={CatImagePage}/>
+
 
 
           </Switch>

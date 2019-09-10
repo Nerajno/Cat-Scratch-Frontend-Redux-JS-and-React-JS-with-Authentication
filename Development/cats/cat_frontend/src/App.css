@@ -61,3 +61,22 @@ div.location{
   color: yellow;
   font-size: 35px;
 }
+
+h1{
+  color: yellow;
+  font-size: 75px;
+}
+
+label{
+  color: yellow;
+  font-size: 45px;
+}
+
+li{
+  color: yellow;
+  font-size: 45px;
+}
+
+h6{
+  font-size: 30px;
+}
