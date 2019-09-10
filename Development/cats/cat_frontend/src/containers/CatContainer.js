@@ -4,11 +4,13 @@ import CatCard  from '../components/CatCard';
 class CatContainer extends React.Component{
   state ={
     loading: true,
-    cats : []
+    cats : [],
+    catImages: []
   };
 
    componentDidMount(){
     const url = "https://api.thecatapi.com/v1/breeds";
+    const url2 = "https://api.thecatapi.com/v1/images/search?limit=10";
     // const response = await fetch(url);
     // const data = await response.json();
     // this.setState({cat: data.results[0], loading: false });
@@ -17,13 +19,20 @@ class CatContainer extends React.Component{
     .then(cats =>this.setState({
       cats: cats
     }))
+
+    fetch(url2)
+    .then(res => res.json())
+    .then(data => this.setState({
+      catImages: data
+    }))
+
   }
 
 
       render(){
         return (
             <div className="ui three column grid container">
-              {this.state.cats.map( cat => <div className="five wide column"><CatCard cat={cat}/> </div>)}
+              {this.state.cats.map( cat => <div className="five wide column"><CatCard catImages={this.state.catImages} cat={cat}/> </div>)}
             </div>
         )
       }

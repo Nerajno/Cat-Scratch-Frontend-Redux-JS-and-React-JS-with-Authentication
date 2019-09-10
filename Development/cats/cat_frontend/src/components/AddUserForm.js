@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class NewUserForm extends React.Component{
 
@@ -40,7 +41,11 @@ class NewUserForm extends React.Component{
                 </div>
                 <button onClick={     (e)=> { this.props.addNewUser(this.state) }    }   className="ui small button" type="submit">Submit</button>
                 </form>
+                <ul>
+                  <li><Link to="/">Home</Link></li>
+                </ul>
             </div>
+
 
 
         )

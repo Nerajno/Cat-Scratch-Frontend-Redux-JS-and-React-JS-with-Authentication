@@ -14,7 +14,7 @@ class CatCard extends React.Component {
         <div className="ui segment image ">
           <Link to={`cat/${this.props.cat.id}`} >
           <img alt={this.props.cat.name}
-              src={this.props.cat.length > 0 ? this.props.cat[0].url : this.props.cat.url} />
+              src={this.props.catImages.length > 0 ? this.props.catImages[0].url : this.props.catImages.url} />
           </Link>
         </div>
         <div className="content">

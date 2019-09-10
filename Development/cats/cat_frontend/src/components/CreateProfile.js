@@ -7,7 +7,7 @@ export default class CreateProfile extends React.Component {
     render() {
       return(
         <div>
-            <h1>Your Profile Page</h1>
+            <h1></h1>
             <h2>Hi, (person's name), Welcome!</h2>
             <h3> Profile Card pic, with update and delete </h3>
             <ul>
