@@ -10,7 +10,7 @@ class CatContainer extends React.Component{
 
    componentDidMount(){
     const url = "https://api.thecatapi.com/v1/breeds";
-    const url2 = "https://api.thecatapi.com/v1/images/search?limit=10";
+    const url2 = "https://api.thecatapi.com/v1/images/search?limit=66";
     // const response = await fetch(url);
     // const data = await response.json();
     // this.setState({cat: data.results[0], loading: false });

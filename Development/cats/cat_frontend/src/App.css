@@ -14,10 +14,39 @@ link{
 
 body{
 
-   background-image: url("https://cdn.wallpapersafari.com/56/63/TPWtA6.jpg");
+   background-image: url("https://i.pinimg.com/originals/67/b9/07/67b907a3f5316bdd9737cc86a67186d5.jpg");
+   background-blend-mode: screen;
 
+}
+#darken {
+  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+  /*darkness level control - change the alpha value for the color for darken/ligheter effect */
 }
 
 a{
   color: blue;
+}
+
+a.header{
+  font-size: 50px;
+}
+p{
+  font-size: 30px;
+}
+div.description{
+  font-size: 25px;
+  color: yellow;
+}
+div.origin{
+  font-size: 25px;
+  color: yellow;
+}
+
+div.life_span{
+  font-size: 25px;
+  color: yellow;
+}
+img{
+  height: 450px;
+   width: 450px;
 }
