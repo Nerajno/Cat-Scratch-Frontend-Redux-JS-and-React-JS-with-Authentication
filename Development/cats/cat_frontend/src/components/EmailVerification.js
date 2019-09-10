@@ -7,7 +7,7 @@ export default class EmailVerification extends React.Component {
     render() {
       return(
         <div>
-            <h3>Can we email your results?</h3>
+            <h1>Can we email your results?</h1>
             <div className="field">
               <label>Enter your email:</label>
               <input required type="email" name="email" placeholder="Email"/>

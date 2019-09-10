@@ -68,7 +68,7 @@ h1{
 }
 
 label{
-  color: yellow;
+  color: red;
   font-size: 45px;
 }
 
@@ -79,4 +79,13 @@ li{
 
 h6{
   font-size: 30px;
+}
+
+div.cat_breed{
+  color: yellow;
+  font-size: 35px;
+}
+
+h4{
+  color: yellow;
 }

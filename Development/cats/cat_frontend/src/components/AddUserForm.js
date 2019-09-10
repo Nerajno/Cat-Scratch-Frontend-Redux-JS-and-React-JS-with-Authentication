@@ -23,7 +23,7 @@ class NewUserForm extends React.Component{
             <div>
 
                 <form className="ui two column grid form">
-                <h3> Add a New User! </h3>
+                <h1> Add a New User! </h1>
                 <div className="field">
                     <label>Name</label>
                     <input onChange = {this.handleInput}  type="text" name="name" placeholder={this.state.name}/>
