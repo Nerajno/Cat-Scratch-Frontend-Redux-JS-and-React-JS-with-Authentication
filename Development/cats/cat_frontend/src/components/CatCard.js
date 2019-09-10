@@ -30,10 +30,11 @@ class CatCard extends React.Component {
             {this.props.cat.description}
           </div>
           <div className="Information">
-          <a href={this.props.cat.wikipedia_url}>Check this cat out!</a>
+          <a href={this.props.cat.wikipedia_url}> More on the {this.props.cat.name}</a>
           </div>
           <div className="origin"><p>Origin</p>
-          {this.props.cat.origin}
+          <a href="https://www.google.com/maps">{this.props.cat.origin}</a>
+
           </div>
           <div className="life_span"><p>Life span</p>
           {this.props.cat.life_span}
