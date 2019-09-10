@@ -16,15 +16,16 @@ body{
 
    background-image: url("https://i.pinimg.com/originals/67/b9/07/67b907a3f5316bdd9737cc86a67186d5.jpg");
    background-blend-mode: screen;
+   margin-top: 50px;
 
 }
 #darken {
-  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
-  /*darkness level control - change the alpha value for the color for darken/ligheter effect */
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+    /*darkness level control - change the alpha value for the color for darken/ligheter effect */
 }
 
 a{
-  color: blue;
+    color: DodgerBlue;
 }
 
 a.header{
@@ -68,7 +69,7 @@ h1{
 }
 
 label{
-  color: red;
+  color: Tomato;
   font-size: 45px;
 }
 
@@ -88,4 +89,8 @@ div.cat_breed{
 
 h4{
   color: yellow;
+}
+
+ul {
+  list-style-type: square;
 }

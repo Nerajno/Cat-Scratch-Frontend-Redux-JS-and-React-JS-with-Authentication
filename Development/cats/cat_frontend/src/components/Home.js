@@ -43,6 +43,9 @@ function CatHome() {
             <li>
             <Link to="/adduserform">Add a New User!</Link>
             </li>
+            <li>
+            <Link to="/catfactscontainer">Additional Cat Facts!</Link>
+            </li>
 
 
         </ul>
