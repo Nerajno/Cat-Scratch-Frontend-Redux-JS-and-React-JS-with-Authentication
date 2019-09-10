@@ -13,41 +13,44 @@ class SignUp extends Component{
   render(){
     return(
       <div className="row" id="signup">
-      <h3> Welcome to Cat Scratch!</h3>
+      <h1> Welcome to Cat Scratch!</h1>
 
-      <h6> Please fill out the User Profile Form Below</h6>
+      <h2> Please fill out the User Profile Form Below</h2>
         <form className=" col s8" onSubmit={this.handleSubmit}>
           <div className="row">
             <div className="input-field col s4">
-              <input id ="Name" type="text" className="valid"/>
+
               <label htmlFor="Name">Name</label>
+              <input id ="Name" type="text" className="valid"/>
 
             </div>
           <div className= "input-field col s4">
+              <label htmlFor="Location">Location</label>
             <input id="Location" type="text" className="valid"/>
-            <label htmlFor="Location">Location</label>
+
           </div>
         </div>
         <div className= "row">
           <div className="input-field col s4">
+              <label htmlFor="spirit_animal">Spirit Animal</label>
             <input id="spirit_animal" type="text" className="valid"/>
-            <label htmlFor="spirit_animal">Spirit Animal</label>
+
           </div>
         <div className= "input-field col s4">
-          <input id="username" type="text" className="valid"/>
           <label htmlFor ="username">Username</label>
+          <input id="username" type="text" className="valid"/>
+
         </div>
-      </div>
-      <div className="row">
+
         <div className= "input-field col s4">
+            <label htmlFor="password">Password</label>
           <div className="password" type="password" className="valid"/>
-          <label htmlFor="password">Password</label>
-        </div>
-      </div>
-      <div className= "row">
+          </div>
+
         <div className="input-field col s4">
+         <label htmlFor="photo">Insert your photo</label>
           <input id="photo" type="text" className="valid"/>
-           <label htmlFor="photo">Insert your photo</label>
+
         </div>
       </div>
       <div className="row">
