@@ -29,6 +29,9 @@ class CatCard extends React.Component {
           <div className="description"><p>Description</p>
             {this.props.cat.description}
           </div>
+          <div className="Information">
+          <a href={this.props.cat.wikipedia_url}>Check this cat out!</a>
+          </div>
           <div className="origin"><p>Origin</p>
           {this.props.cat.origin}
           </div>
