@@ -18,7 +18,6 @@ class CatCard extends React.Component {
 
       <div class="ui card">
       <div className="ui segment image ">
-      
         <Link to={`cat/${this.props.cat.id}`} >
         <img alt={this.props.cat.name}
             src={this.props.catImages.length > 0 ? this.pullRandomCatImage() : null} />
