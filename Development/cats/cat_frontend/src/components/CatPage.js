@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Card, Icon, Image, } from 'semantic-ui-react';
+import React from 'react'
+import CatCard  from '../components/CatCard';
 
-
-export default class CatPage extends React.Component {
+class CatContainer extends React.Component{
   state ={
     loading: true,
-    cats : []
+    cats : [],
+    catImages: []
   };
 
    componentDidMount(){
     const url = "https://api.thecatapi.com/v1/breeds";
+    const url2 = "https://api.thecatapi.com/v1/images/search?limit=66";
     // const response = await fetch(url);
     // const data = await response.json();
     // this.setState({cat: data.results[0], loading: false });
@@ -19,28 +19,29 @@ export default class CatPage extends React.Component {
     .then(cats =>this.setState({
       cats: cats
     }))
-  }
 
-  render() {
-    return (
-      <div className="ui column">
+    fetch(url2)
+    .then(res => res.json())
+    .then(data => this.setState({
+      catImages: data
+    }))
 
-        <div className="content">  <a className="header">{this.props.cat.name}</a>
-          <div className="description"><p>Description</p>
-            {this.props.cat.description}
-          </div>
-          <div className="origin"><p>Origin</p>
-          {this.props.cat.origin}
-          </div>
-          <div className="life_span"><p>Life span</p>
-          {this.props.cat.life_span}
-          </div>
-        </div>
-
-      </div>
-    )
   }
 
 
+      render(){
+        return (
+            <div className="ui three column grid container">
+              {this.state.cats.map( cat => <div className="five wide column"><CatCard catImages={this.state.catImages} cat={cat}/> </div>)}
+            </div>
+        )
+      }
 
-}
+    }
+
+    
+
+
+
+
+export default CatContainer;
