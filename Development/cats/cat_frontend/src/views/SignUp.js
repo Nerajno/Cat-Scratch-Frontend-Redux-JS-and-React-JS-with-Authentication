@@ -37,24 +37,19 @@ class SignUp extends Component{
           <div className="input-field col s4">
               <label htmlFor="spirit_animal">Spirit Animal</label>
             <input id="spirit_animal" type="text" className="valid" name="spirit_animal"/>
-
           </div>
         <div className= "input-field col s4">
           <label htmlFor ="username">Username</label>
           <input id="username" type="text" className="valid" name="username"/>
-
         </div>
-
         <div className= "input-field col s4">
             <label htmlFor="password">Password</label>
           <input id="password" type="password" className="valid" name="password"/>
           </div>
-
-        <div className="input-field col s4">
+            <div className="input-field col s4">
          <label htmlFor="photo">Insert your photo</label>
           <input id="photo" type="text" className="valid" name="photo"/>
-
-        </div>
+          </div>
       </div>
       <div className="row">
         <div className="input-field col s12">

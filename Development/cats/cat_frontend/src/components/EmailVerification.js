@@ -4,6 +4,11 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 export default class EmailVerification extends React.Component {
+  handleSubmit = (e) => {
+    e.preventDefault()
+    this.props.handleEmailVerification(e)
+    this.props.history.push('/')
+  }
     render() {
       return(
         <div>
@@ -14,7 +19,7 @@ export default class EmailVerification extends React.Component {
               <button className="waves-effect waves-light purple lighten-1 btn" type="submit">Submit</button>
           </div>
             <h4>Thank you for submission!</h4>
-          
+
           </div>
       )
     }
