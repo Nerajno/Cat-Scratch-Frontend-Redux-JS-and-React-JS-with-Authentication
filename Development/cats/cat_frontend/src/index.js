@@ -32,6 +32,7 @@ import EditProfile from './components/EditProfile';
 
 
 
+
 import CatContainer from './containers/CatContainer';
 import UserContainer from './containers/UserContainer';
 import UserPage from './components/UserPage';
@@ -64,7 +65,7 @@ ReactDOM.render(
               <Route path = "/create_profile"  component={CreateProfile}/>
               <Route path = "/profile_form"  component={ProfileForm}/>
               <Route path = '/adduserform' component= {AddUserForm}/>
-              <Route path = '/editprofile' component= {EditProfile}/>
+            
 
 
 
