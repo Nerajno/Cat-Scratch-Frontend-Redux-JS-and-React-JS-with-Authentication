@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Card, Icon, Image, } from 'semantic-ui-react';
+import React from 'react'
+import UserCard  from '../components/UserCard';
 
-
-export default class UserPage extends React.Component {
-
-
+class UserContainer extends React.Component{
   state ={
     loading: true,
     users : []
@@ -24,21 +20,16 @@ export default class UserPage extends React.Component {
   }
 
 
+      render(){
+        return (
+            <div className="ui three column grid container">
+              {this.state.users.map( user => <div className="five wide column"><UserCard user={user}/> </div>)}
+            </div>
+        )
+      }
 
-    render() {
-      return(
-        <div>
-            <h1> Claw-ver Decision!</h1>
-
-            <h3> Cat Information</h3>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/logout">Logout</Link></li>
-              <li><Link to="/my_profiles"> My Profile</Link></li>
-            </ul>
-        </div>
-
-        
-      )
     }
-  }
+
+
+
+export default UserContainer;

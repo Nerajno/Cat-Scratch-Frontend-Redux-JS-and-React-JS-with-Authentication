@@ -9,7 +9,7 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.handleLogin(e)
-    this.props.history.push('/dashboard')
+    this.props.history.push('/')
   }
   render(){
   return(

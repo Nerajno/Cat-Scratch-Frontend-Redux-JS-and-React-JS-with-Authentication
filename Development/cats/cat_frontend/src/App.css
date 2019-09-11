@@ -16,7 +16,8 @@ body{
 
    background-image: url("https://i.pinimg.com/originals/67/b9/07/67b907a3f5316bdd9737cc86a67186d5.jpg");
    background-blend-mode: screen;
-   margin-top: 50px;
+   margin-top: 10px;
+   margin-bottom: 10px;
 
 }
 #darken {

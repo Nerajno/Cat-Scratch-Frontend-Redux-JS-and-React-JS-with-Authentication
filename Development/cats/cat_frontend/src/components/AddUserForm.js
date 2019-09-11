@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class NewUserForm extends React.Component{
 
+
     constructor(){
         super()
         this.state={
             name: "",
             spirit_animal: "",
             img_url: "",
+            location:"",
 
         }
     }
@@ -19,7 +21,7 @@ class NewUserForm extends React.Component{
 
     render(){
         return(
-          
+
 
             <div>
 
@@ -38,6 +40,13 @@ class NewUserForm extends React.Component{
                     <label> Add Image</label>
 
                     <input onChange = {this.handleInput} type="text" name="img_url" placeholder={this.state.img_url}/>
+                    </div>
+                </div>
+                <div className="field">
+                    <div className="field">
+                    <label> Location </label>
+
+                    <input onChange = {this.handleInput} type="text" name="location" placeholder={this.state.location}/>
                     </div>
                 </div>
                 <button onClick={     (e)=> { this.props.addNewUser(this.state) }    }   className="ui small button" type="submit">Submit</button>

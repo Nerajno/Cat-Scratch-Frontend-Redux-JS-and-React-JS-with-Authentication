@@ -18,7 +18,7 @@ import CatCard  from './components/CatCard';
 import UserCard from './components/UserCard';
 import Login from './views/Login';
 import SignUp from './views/SignUp';
-
+import Navigation from './components/Navigation';
 
 import AddToCart from './components/AddToCart'
 
@@ -29,6 +29,7 @@ import CreateProfile from './components/CreateProfile';
 import ProfileForm from './views/ProfileForm';
 import AddUserForm from './components/AddUserForm';
 import EditProfile from './components/EditProfile';
+
 
 
 import CatContainer from './containers/CatContainer';
@@ -45,8 +46,9 @@ import AdditionalCatCard from './components/AdditionalCatCard';
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-
+          <Navigation/>
           <Switch>
+
               <Route path ="/app" component={App}/>
               <Route path = "/" exact={true} component={Home}/>
               <Route path = "/about"  component={About}/>
@@ -63,6 +65,7 @@ ReactDOM.render(
               <Route path = "/profile_form"  component={ProfileForm}/>
               <Route path = '/adduserform' component= {AddUserForm}/>
               <Route path = '/editprofile' component= {EditProfile}/>
+
 
 
               <Route path = "/catcontainer" component={CatContainer}/>
