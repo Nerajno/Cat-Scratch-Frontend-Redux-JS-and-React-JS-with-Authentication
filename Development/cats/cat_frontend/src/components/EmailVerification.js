@@ -14,10 +14,7 @@ export default class EmailVerification extends React.Component {
               <button className="waves-effect waves-light purple lighten-1 btn" type="submit">Submit</button>
           </div>
             <h4>Thank you for submission!</h4>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/logout">Logout</Link></li>
-              </ul>
+          
           </div>
       )
     }

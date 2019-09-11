@@ -13,6 +13,7 @@ render(){
     <Nav className="mr-auto">
       <Nav.Link href="/login">Login</Nav.Link>
       <Nav.Link href="/signup">Signup</Nav.Link>
+      <Nav.Link href="/logout">Logout</Nav.Link>
       <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="/about">About</NavDropdown.Item>
         <NavDropdown.Item href="/usercontainer">All User Profiles</NavDropdown.Item>

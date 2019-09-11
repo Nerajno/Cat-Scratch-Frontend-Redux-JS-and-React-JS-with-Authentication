@@ -30,10 +30,6 @@ class Login extends Component {
           </div>
         </div>
       </form>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-
-      </ul>
 
     </div>
   )

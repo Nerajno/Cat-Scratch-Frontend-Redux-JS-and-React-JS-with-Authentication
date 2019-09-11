@@ -15,9 +15,10 @@ class SignUp extends Component{
   render(){
     return(
       <div className="row" id="signup">
-      <h1> Welcome to Cat Scratch!</h1>
+      <h1> Welcome to Cat Scratch!
+      Please fill out the User Profile Form Below</h1>
 
-      <h2> Please fill out the User Profile Form Below</h2>
+
         <form className=" col s8" onSubmit={this.handleSubmit}>
           <div className="row">
             <div className="input-field col s4">
@@ -62,10 +63,7 @@ class SignUp extends Component{
       </div>
     </form>
 
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/logout">Logout</Link></li>
-      </ul>
+
   </div>
   )
   }
