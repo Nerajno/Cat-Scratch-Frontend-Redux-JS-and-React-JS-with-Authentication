@@ -11,7 +11,7 @@ export default class About extends React.Component {
               <h1>What is Cat Scratch!</h1>
               <p>Cat Scratch is an interactive application that matches humans to cats in a very selective way. It allows for humans to select a
                 perfect cat breed by description, origin, and life span. These attirbutes allow for a human to connect to the perfect cat.
-                
+
             <Link to="/catcontainer">All Cat Breed's!</Link></p>
             </div>
 

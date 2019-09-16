@@ -22,7 +22,7 @@ class CartCard extends React.Component {
           <div className="cat_breed"><p>Cat Breed Chosen</p>
             {this.props.user.cat_breed}
           </div>
-      
+
           </div>
           </div>
     )
