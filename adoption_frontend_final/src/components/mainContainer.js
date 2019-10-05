@@ -45,8 +45,8 @@ class MainContainer extends React.Component{
             // <PersonalInfo />,
             <Header  />,
             <DogContainer dogs={this.state.dogs} />,
-            < UserContainer />,
-            < AdoptionContainer />
+            < UserContainer />
+            // < AdoptionContainer />
             // <div className="ui three column grid container">  {this.state.dogs.map
             // (dog => <div className="five wide column"><DogCard Dog={dog}/> </div>)}
             // </div>
